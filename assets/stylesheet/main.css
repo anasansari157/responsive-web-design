@@ -302,6 +302,14 @@ tr:nth-child(odd) {
     }
 
 
+    .footer {
+        padding: 20px;
+        background: #19242E;
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
 /* Media */
 
 @media all and (max-width:800px) {
