@@ -55,7 +55,6 @@ table {
 }
 
 .mod-container {
-    /* max-width: 1000px; */
     margin: 0 200px;
 }
 
@@ -112,11 +111,12 @@ body {
 
 
 .logo-image {
-    width: 15%;
-    max-height: 8%;
+    width: 50%;
+    height: 50%;
 }
     .logo-image img {
-        width: 100%;
+        max-width: 100px;
+        height: 30px;
         /* align-items: center; */
         /* How to center image wrt nav links? */
     }
@@ -125,9 +125,10 @@ body {
 .navbar {
     justify-content: space-between;
     padding: 20px 20px;
-    /* align-content: center; */
-    align-items: center;
 }
+    .nav-right {
+        padding: 10px 0;
+    }
 
     .navbar a {
         color: white;
@@ -216,13 +217,13 @@ body {
 
     /* How to align-left the button? */
 
-    .form button {
+    .left button {
         background: #326D5E;
         border: none;
         color: white;
     }
         .left {
-            margin-left: 0px;
+            margin-left: 280px;
         }
 
 
@@ -301,6 +302,14 @@ tr:nth-child(odd) {
         padding-top: 10px;
     }
 
+    .footer {
+        padding: 20px;
+        background: #19242E;
+        color: white;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
 
     .footer {
         padding: 20px;
@@ -315,16 +324,31 @@ tr:nth-child(odd) {
 @media all and (max-width:800px) {
     .mod-container {
         max-width: 500px;
-        margin: 0 auto;
+        margin: 0 50px;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .hero-heading {
+        font-size: 40px;
+    }
+    .hero-para {
+        font-size: 20px;
+    }
+
+
+    .row {
+        display: block;
     }
 
     .portfolio-image {
         width: 90%;
     }
-    .mod-flex {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
+
+    .portfolio-image img {
+        width: 100%;
     }
 
     .links-icon {
@@ -334,13 +358,30 @@ tr:nth-child(odd) {
         width: 100%;
     }
 
-    .para {
-        width: 100%;
+    .two-para {
+        display: block;
     }
 
+    .para {
+        width: 100%;
+        padding-bottom: 20px ;
+    }
+
+    input, textarea {
+        width: 90%;
+    }
+
+    .left {
+        margin: 0px;
+        text-align: center;
+    }
     iframe {
         width: 400px;
         height: 200px;
+    }
+
+    .social-links-3-columns {
+        display: block;
     }
 }
 
