@@ -1,0 +1,370 @@
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* MODULAR CLASSES */
+.mod-flex {
+    display: flex;
+}
+
+.mod-container {
+    /* max-width: 1000px; */
+    margin: 0 200px;
+}
+
+.mod-text-center {
+    text-align: center;
+}
+
+.mod-padding-top-bottom {
+    padding: 100px 0;
+}
+
+.mod-h2 {
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-bottom: 40px;
+}
+
+.mod-button {
+    border: 2px solid black;
+    padding: 15px 40px;
+    background: white;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 5px;
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: #2C3E50;
+}
+
+
+/* CUSTOM CSS */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+.header {
+    background: #2C3E50;
+
+}
+
+
+.logo-image {
+    width: 15%;
+    max-height: 8%;
+}
+    .logo-image img {
+        width: 100%;
+        /* align-items: center; */
+        /* How to center image wrt nav links? */
+    }
+
+
+.navbar {
+    justify-content: space-between;
+    padding: 20px 20px;
+    /* align-content: center; */
+    align-items: center;
+}
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 0 10px;
+    }
+
+
+/* HERO-SECTION */
+.hero-section {
+    background: linear-gradient(#2C4B57, #4FA380);
+    padding: 150px 0;
+    color: white;
+}
+    .hero-heading {
+        font-size: 55px;
+        font-weight: 900;
+        line-height: 1.5;
+        padding-bottom: 30px;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+    }
+
+    .hero-para {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+
+/* Portfolio Section */
+.row {
+    justify-content: center;
+}
+
+    .portfolio-image {
+        margin: 15px;
+        width: 30%;
+    }
+
+    .row img {
+        width: 100%;
+
+}
+
+
+/* ABOUT SECTION */
+.about-section {
+    background: linear-gradient(#2C4B57, #4FA380);
+    color: white;
+}
+    .two-para {
+        justify-content: center;
+    }
+    .para {
+        text-align: left;
+        width: 40%;
+        margin: 10px;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    /* How the hell is it possible that removing the flex line in para removes everything */
+    /* How to know that I have to take the image inside a container or in how many containers */
+
+/* CONTACT FORM */
+.form {
+    
+}
+    input, textarea {
+        /* max-width: 500px; max-width not working, why ?*/
+        width: 50%;
+        margin: 20px;
+        padding: 20px;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        font-size: 20px;
+        padding-left: 0;
+        color: rgba(59, 59, 223, 0.719);
+    }
+
+    /* .contact-form .left {
+        max-width: 500px;
+        text-align: left;
+    } */
+
+    /* How to align-left the button? */
+
+    .form button {
+        background: #326D5E;
+        border: none;
+        color: white;
+    }
+        .left {
+            margin-left: 0px;
+        }
+
+
+/* MAP SECTION */
+ .map-section {
+     background: #BDC7D2;
+ }
+
+ 
+
+
+
+ /* TABLE SECTION */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+	background-color: #1E2639;
+    color: #205774;
+    font-weight: 800;
+}
+
+td, th {
+
+  text-align: center;
+  padding: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #2B3346;
+}
+
+tr:nth-child(odd) {
+	background-color: #323C50;
+}
+
+
+/* social-links Section */
+.social-links {
+    background: #2C3E50;
+}
+    .social-links-3-columns {
+        justify-content: space-around;
+    }
+
+    .social-links-column1-3 {
+        width: 30%;
+        color: white;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .social-links-column1-3 h4 {
+        font-size: 20px;
+        font-weight: 900;
+        padding-bottom: 30px;
+    }
+
+    .social-links-column1-3 p {
+        font-weight: 500;
+        line-height: 1.5;
+        word-spacing: 1px;
+    }
+
+    .social-links-column1-3:last-child span {
+        color: rgb(11, 156, 11);
+    }
+
+    .links-icon {
+        justify-content: space-around;
+    }
+
+    .links-icon  .circle i {
+        padding-top: 10px;
+    }
+
+
+/* Media */
+
+@media all and (max-width:800px) {
+    .mod-container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .portfolio-image {
+        width: 90%;
+    }
+    .mod-flex {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .links-icon {
+        flex-direction: row;
+    }
+    .social-links-column1-3 {
+        width: 100%;
+    }
+
+    .para {
+        width: 100%;
+    }
+
+    iframe {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
